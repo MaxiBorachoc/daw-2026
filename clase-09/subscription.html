@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción al diario online</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+    <nav><a href="index-09.html">News </a><a href="">Matches </a><a href="">Results </a><a href="">Events </a><a href="">Players</a> <a href="">Stats</a> <a href="">Fantasy</a> <a href="">Forum</a> <a href="">Media</a> <a href="">Betting</a> <a href="">Live</a> <a href="">Major</a> <a href="subscription.html">Suscripción</a></nav>
+    
+    <section class="subscription">
+        <h2>Suscripción al diario online</h2>
+        <form id="subscription-form" novalidate>
+            <div class="form-group">
+                <label for="fullName">Nombre completo</label>
+                <input id="fullName" name="fullName" type="text" placeholder="Juan Pérez" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" type="password" placeholder="Al menos 8 caracteres" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Edad</label>
+                <input id="age" name="age" type="number" min="18" placeholder="18" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input id="phone" name="phone" type="tel" placeholder="112345678" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Dirección</label>
+                <input id="address" name="address" type="text" placeholder="Calle 1234" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Ciudad</label>
+                <input id="city" name="city" type="text" placeholder="Ciudad" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="postalCode">Código Postal</label>
+                <input id="postalCode" name="postalCode" type="text" placeholder="1234" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="dni">DNI</label>
+                <input id="dni" name="dni" type="text" placeholder="12345678" />
+                <small class="error-message"></small>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="subs.js"></script>
+</body>
+</html>
