@@ -1,4 +1,7 @@
 const form = document.getElementById('subscription-form');
+        const fullNameInput = document.getElementById('fullName');
+        const dynamicGreeting = document.getElementById('dynamic-greeting');
+        
         const fieldConfig = [
             { id: 'fullName', label: 'Nombre completo' },
             { id: 'email', label: 'Email' },
@@ -102,6 +105,19 @@ const form = document.getElementById('subscription-form');
             input.addEventListener('blur', () => validateInput(input));
             input.addEventListener('focus', () => clearError(input));
         });
+
+        const updateDynamicGreeting = () => {
+            const name = fullNameInput.value.trim();
+            if (name) {
+                dynamicGreeting.textContent = `HOLA ${name.toUpperCase()}`;
+            } else {
+                dynamicGreeting.textContent = 'HOLA';
+            }
+        };
+
+        fullNameInput.addEventListener('keydown', updateDynamicGreeting);
+        fullNameInput.addEventListener('keyup', updateDynamicGreeting);
+        fullNameInput.addEventListener('focus', updateDynamicGreeting);
 
         form.addEventListener('submit', event => {
             event.preventDefault();
